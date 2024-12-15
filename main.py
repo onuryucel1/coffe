@@ -6,7 +6,7 @@ st.title('Yine Ne Yiyeceğinize Karar Vermediniz 😂')
 st.write("Aralarında boşluk koyarak gitmek istediğiniz yerlerin adını giriniz.")
 
 # Kullanıcıdan yerleri alma
-yerler_input = st.text_input("Yerleri girin (örneğin: 'Pideci Dönerci Burger')")
+yerler_input = st.text_input("örneğin: 'Pideci Dönerci Burger'")
 
 # Kura çekme butonu
 if st.button("Kura Çek"):
