@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-
+st.set_page_config(page_title="Yemek Kurası", page_icon="🍴")
 st.title('Yine Ne Yiyeceğinize Karar Vermediniz 😂')
 
 st.write("Aralarında boşluk koyarak gitmek istediğiniz yerlerin adını giriniz.")
