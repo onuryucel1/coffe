@@ -17,8 +17,14 @@ if st.button("Kura Çek"):
         if len(yerler_listesi) < 2:
             st.error("Lütfen en az 2 farklı yemek yeri girin!")
         else:
-            # Rastgele seçim yapma
-            secilen_yer = np.random.choice(yerler_listesi)
+            # Listeyi karıştır ve iki yer seç
+            np.random.shuffle(yerler_listesi)
+            secilen_yer = yerler_listesi[0]
+            ikinci_yer = yerler_listesi[1] if len(yerler_listesi) > 1 else None
+            
+            # Sonuçları göster
             st.success(f"Bugün gidilecek yer: **{secilen_yer}** 🎉")
+            if ikinci_yer:
+                st.info(f"Eğer ilk yere gidemiyorsanız, ikinci seçenek: **{ikinci_yer}** 😊")
     else:
         st.error("Lütfen en az bir yemek yeri girin.")
